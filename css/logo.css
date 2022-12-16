@@ -1,0 +1,36 @@
+.logodiv{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+}
+.logodivd{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    animation: sAnimation 1.5s ease;
+    transform-origin: top;
+}
+.s{
+    color:rgb(42, 235, 193);
+    animation: sAnimation 2s ease;
+    transform-origin: top;
+}
+.t{
+    color: rgb(42, 132, 235);
+    animation: sAnimation 2.5s ease;
+    transform-origin: top;
+}
+@media screen and (min-width: 1000px){
+    .logodivd{
+        position: absolute;
+        display: flex;
+        width: 10px;
+    }
+}
+

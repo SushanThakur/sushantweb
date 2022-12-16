@@ -1,0 +1,33 @@
+.sphere1{
+    position: fixed;
+    background: #863EBB;
+    width: 150px;
+    height: 150px;
+    border-bottom-right-radius: 150px;
+    animation: sphereAnimation 2s ease;
+    transform-origin: top;
+    top: 40px;
+}
+.sphere2{
+    position: fixed;
+    background: #AC73D7;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 150px;
+    animation: sphereAnimation 2s ease;
+    transform-origin: bottom;
+}
+@media screen and (max-width: 1024px){
+    .sphere1{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 690px){
+    .sphere2{
+        display: none;
+    }
+    
+}

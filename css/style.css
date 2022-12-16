@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&family=Open+Sans:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1e1f1f;
+    font-family: 'Poppins';
+}
+.bgSection{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/bg.jpg');
+    filter: brightness(90%) blur(5px);
+}
+.bgSection.active{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/bg.jpg');
+    filter: brightness(90%) blur(10px);
+}
+.publish{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.publish.inactive{
+    display: none;
+}
+.quotes{
+    position: absolute;
+    width: 90%;
+    color: white;
+    left: 10%;
+    text-align: left;
+    font-size: 25px;
+    top: 15%;
+    padding: 0 25px;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    animation: quotesAnimation 1s ease-in;
+    transform-origin: top;
+}
+.quotes.active{
+    filter: blur(10px);
+}
+.name{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding: 0 25px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.mainText{
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 5%;
+    font-size: 25px;
+}
+.mainTextHeading{
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 45px;
+    font-weight: 900;
+}
+.dpDiv{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    left: 25%;
+    top: 35%;
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.dpImg{
+    height: 150px;
+}
+@media screen and (max-width: 690px){
+    .quotes{
+        width: 100%;
+        left: 0;
+        top: 15%;
+        font-size: 15px;
+        padding:0px 15px;
+        line-height: 25px;
+    }
+    .name{
+        font-size: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (min-width: 690px){
+    .dpDiv{
+        position: absolute;
+        left: 65%;
+        top: 58%;
+        
+    }
+}

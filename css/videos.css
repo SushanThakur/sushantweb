@@ -1,0 +1,88 @@
+.constr{
+    position: fixed;
+    display: flex;
+    background-color: #00000090;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.constr.invisible{
+    display:none;
+}
+.constrTxt{
+    position: absolute;
+    display: flex;
+    color: white;
+    font-size: 30px;
+}
+.videodiv{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    filter: blur(5px);
+}
+.videodiv.act{
+    filter: blur(5px);
+}
+.videocontainer{
+    position: absolute;
+    width: 90%;
+    top: 50px;
+    padding-bottom:50px;
+}
+.video{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: #00000090;
+    border: 3px #5382C8 solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.videothumbnail{
+    position: absolute;
+    display: block;
+    height: 90%;
+    width: 150px;
+    background: #00000090;
+    border: 2px #5382C8 solid;
+    border-radius: 5px;
+    margin-left: 7px;
+}
+.videotitle{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    color: white;
+    display: block;
+    display: flex;
+    justify-content: left;
+}
+.videotitlecontainer{
+    left: 30%;
+    width: 100%;
+    text-align: left;
+    margin-left: 170px;
+}
+.youtuberedirect{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #5382C8;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transform: translateX(-15px) translateY(50%);
+}
+.youtuberedirect a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}

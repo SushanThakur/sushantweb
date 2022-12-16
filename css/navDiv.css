@@ -1,0 +1,166 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    z-index: 999;
+}
+.open{
+    position: absolute;
+    height: 30px;
+    cursor: pointer;
+}
+.open.invisible{
+    display: none;
+}
+.close{
+    position: absolute;
+    width: 30px;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    display: none;
+}
+.close.visible{
+    display: flex;
+}
+nav{
+    display: none;
+}
+nav ul{
+    display: block;
+    text-align: center;
+    background: #00000090;
+    animation: navBarAnimation 0.5s alternate;
+    transform-origin: top;
+    list-style-type: none;
+}
+nav ul a li{
+    padding: 15px 0;
+}
+nav ul a li:hover{
+    font-weight: bold;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+nav.active{
+    display: block;
+}
+.mobilenav{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background: #00000090;
+}
+.mobilenav.clicked{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+.text1{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 80px 10px 0px;
+    text-align: right;
+}
+.text1.invisible{
+    display: none;
+}
+.text2{
+    position: absolute;
+    display: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 80px 10px 0px;
+    text-align: right;
+}
+.text2.visible{
+    display: block;
+}
+.options{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 60px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    background: #00000090;
+}
+#active{
+    font-weight: bolder;
+}
+.logodiv{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    align-items: center;
+}
+.logoa{
+    text-decoration: none;
+    height: 80%;
+}
+.logo{
+    display: flex;
+    height: 100%;
+    margin-left: 10px;
+}
+@media screen and (min-width: 1000px){
+    .mobilenav{
+        display: none;
+    }
+    .navbar{
+        top: 0;
+        display: flex;
+        height: 40px;
+        background: #00000090;
+        padding: 0px;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .navbar nav ul{
+        background: none;
+        border: none;
+    }
+    .navbar nav ul a li{
+        display: inline;
+        padding: 10px 20px 2px 20px;
+    }
+    .navbar nav ul a li:hover{
+        background: rgba(0, 0, 0, 0.274);
+        font-weight: 400;
+    }
+    .navbar nav ul a{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .navbar nav ul a li:hover{
+        color:rgb(255, 255, 255);
+    }
+    #active{
+        background: transparent;
+        border-bottom: 3px solid white;
+    }
+}
+
+
+
+
+
+
+
+
+
+

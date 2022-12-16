@@ -1,0 +1,57 @@
+.preloder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transform: opacity ease 2s;
+}
+.preloder.invisible{
+    opacity: 0;
+    pointer-events: none;
+}
+.preloderBG{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #863EBB;    
+    display: flex;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1, .circle2, .circle3{
+    width: 15px;
+    height: 15px;
+    background: white;
+    z-index: 5;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.circle1{
+    background: rgb(143, 223, 143);
+    animation: loading 1s 0.1s linear infinite;
+}
+.circle2{
+    background: rgb(212, 124, 124);
+    animation: loading 1s 0.4s linear infinite;
+}
+.circle3{
+    background: rgb(71, 160, 219);
+    animation: loading 1s 0.6s linear infinite;
+}
+
+.preloderText{
+    position: absolute;
+    margin-top: 100px;
+    color: white;
+}
+
+@keyframes loading {
+    50%{
+        transform: translate(0, -20px);
+    }
+}
